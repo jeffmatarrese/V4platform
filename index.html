@@ -7,107 +7,102 @@
 
 </head>
 <body>
-	<main>
-		<!-- AUDIO FILES PRELOADED -->
-		<audio preload="auto" id="audio_a1"><source src="Assets/Hello-MyNameisEMAR.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_b1"><source src="Assets/ItsNiceToMeetYou.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_c1"><source src="Assets/HowStressedRightNow.mp3" type="audio/mp3"></audio>
-		<audio preload="auto" id="audio_d1"><source src="Assets/WhatisYourMood.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_e1"><source src="Assets/ThankYou-StressStories.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_f1"><source src="Assets/Great-ImListening.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_g1"><source src="Assets/DoYouWantToTellMeMore.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_h1"><source src="Assets/HowDidThatMakeYouFeel.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_j1"><source src="Assets/ThankYouStory.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_k1"><source src="Assets/LikedHearingHowYourDoing.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_m1"><source src="Assets/ItWasNiceMeetingYou-Bye.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_c3"><source src="Assets/ThatsGreattoHear.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_c4"><source src="Assets/ThanksforSharing.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_c5"><source src="Assets/ImSorryToHearThat.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_f2"><source src="Assets/ThatSoundsDifficult.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_f3"><source src="Assets/ThatSoundsStressful.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_f4"><source src="Assets/ICanUnderstandWhyYoureStressed.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_d2"><source src="Assets/ImSorryDidntHearThat.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_d3"><source src="Assets/CanYouRepeatThat.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_b3"><source src="Assets/ComeFindMeLater.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_h2"><source src="Assets/Yes.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_h3"><source src="Assets/I-See.wav" type="audio/wav"></audio>
-		<audio preload="auto" id="audio_h4"><source src="Assets/Oh.wav" type="audio/wav"></audio>
-
-		<div class="container"> <!-- all grid elements live within -->
-			<!-- status bar -->
-			<div class="status">
-				<h1>EMAR v4 Teleoperator</h1>
-				<hr>
-			</div>
-
-			<!-- prompts -->
-			<div class="introSection highlightSection">
-				<h2>Intro</h2>
-				<button type="button" id="a1" class="intro" onclick="document.getElementById('audio_a1').play()">Hello! My name is EMAR. I am a social robot designed by the University of Washington. I am designed to help people with stress. What is your name?</button>
-				<button id="b1" class="intro" onclick="document.getElementById('audio_b1').play()">It’s nice to meet you. I like talking to people. May I ask you a couple of questions about how you're doing?</button>
-			</div>
-
-			<div class="emaSection">
-				<h2>Momentary</h2>
-				<button id="c1" class="emaQs" onclick="document.getElementById('audio_c1').play()">Can you tell me, how stressed do you feel right now?</button>
-				<button id="d1" class="emaQs" onclick="document.getElementById('audio_d1').play()">I'd also like to know, what is your mood right now?</button>
-			</div>
-			<div class="stressSection">
-				<h2>Stress Story</h2>
-				<button id="e1" class="stressStory" onclick="document.getElementById('audio_e1').play()">Thank you for sharing your stress level and mood with me. I also really like to hear stories. Would you like to share a stress story with me?</button>
-				<button id="f1" class="stressStory" onclick="document.getElementById('audio_f1').play()">Great, I am listening.</button>
-				<button id="g1" class="stressStory" onclick="document.getElementById('audio_g1').play()">Do you want to tell me more about that?</button>
-				<button id="h1" class="stressStory" onclick="document.getElementById('audio_h1').play()">How did that make you feel?</button>
-			</div>
-			<div class="exitSection">
-				<h2>Exit</h2>
-				<button id="j1" class="exit" onclick="document.getElementById('audio_j1').play()">Thank you for sharing that story with me.</button>
-				<button id="k1" class="exit" onclick="document.getElementById('audio_k1').play()">I really liked hearing about how you are doing.</button>
-				<button id="m1" class="exit" onclick="document.getElementById('audio_m1').play()">It was nice meeting you. Bye!</button>
-			</div>
-
-			<!-- Response break -->
-			<div class="responseBreak">
-				<h2>Responses</h2>
-				<hr>
-			</div>
-
-			<!-- responses -->
-			<div class="emaResponses">
-				<button id="c3" class="ema_response" onclick="document.getElementById('audio_c3').play()">That's great to hear.</button>
-				<button id="c4" class="ema_response" onclick="document.getElementById('audio_c4').play()">Thanks for sharing that with me.</button>
-				<button id="c5" class="ema_response" onclick="document.getElementById('audio_c5').play()">I'm sorry to hear that, I hope things get better.</button>	
-			</div>
-
-			<div class="storyResponses">
-				<button id="f2" class="story_response" onclick="document.getElementById('audio_f2').play()">That sounds difficult.</button>
-				<button id="f3" class="story_response" onclick="document.getElementById('audio_f3').play()">That sounds stressful.</button>
-				<button id="f4" class="story_response" onclick="document.getElementById('audio_f4').play()">I can understand why you were stressed.</button>
-			</div>
-
-			<div class="responseBar">
-				<button id="d2" class="response" onclick="document.getElementById('audio_d2').play()">I'm sorry, I didn't hear that.</button>
-				<button id="d3" class="response" onclick="document.getElementById('audio_d3').play()">Could you repeat that?</button>
-				<button id="b3" class="response" onclick="document.getElementById('audio_b3').play()">Come find me later if you feel like talking.</button>
-				<button id="h2" class="response" onclick="document.getElementById('audio_h2').play()">Yes.</button>
-				<button id="h3" class="response" onclick="document.getElementById('audio_h3').play()">I see.</button>
-				<button id="h4" class="response" onclick="document.getElementById('audio_h4').play()">Oh.</button>
-			</div>
-
-			<footer>
-				<form class="sessionInfo">
-					<span class="start">
-						<label for="researcher">Researcher:</label>
-						<input type="text" name="researcher">
-						<label for="participantID">Participant ID:</label>
-						<input type="text" name="participantID">
-					</span>
-				</form>
-				<button id="startSession" class="sessionBtn">Start Session</button>
-				<button id="endSession" class="sessionBtn">End Session</button>
-			</footer>
-		</div> <!-- /container -->
-	</main>
+    <main>
+        <!-- AUDIO FILES PRELOADED -->
+        <audio preload="auto" id="audio_a1"><source src="Assets/Hello-MyNameisEMAR.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_b1"><source src="Assets/ItsNiceToMeetYou.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_c1"><source src="Assets/HowStressedRightNow.mp3" type="audio/mp3"></audio>
+        <audio preload="auto" id="audio_d1"><source src="Assets/WhatisYourMood.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_e1"><source src="Assets/ThankYou-StressStories.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_f1"><source src="Assets/Great-ImListening.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_g1"><source src="Assets/DoYouWantToTellMeMore.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_h1"><source src="Assets/HowDidThatMakeYouFeel.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_j1"><source src="Assets/ThankYouStory.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_k1"><source src="Assets/LikedHearingHowYourDoing.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_m1"><source src="Assets/ItWasNiceMeetingYou-Bye.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_c3"><source src="Assets/ThatsGreattoHear.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_c4"><source src="Assets/ThanksforSharing.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_c5"><source src="Assets/ImSorryToHearThat.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_f2"><source src="Assets/ThatSoundsDifficult.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_f3"><source src="Assets/ThatSoundsStressful.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_f4"><source src="Assets/ICanUnderstandWhyYoureStressed.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_d2"><source src="Assets/ImSorryDidntHearThat.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_d3"><source src="Assets/CanYouRepeatThat.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_b3"><source src="Assets/ComeFindMeLater.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_h2"><source src="Assets/Yes.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_h3"><source src="Assets/I-See.wav" type="audio/wav"></audio>
+        <audio preload="auto" id="audio_h4"><source src="Assets/Oh.wav" type="audio/wav"></audio>
+        <!-- dpl: THE ONE TRUE AUDIO PLAYER -->
+        <audio id="audio_play"><source src="Assets/Oh.wav" type="audio/wav"></audio>
+        <div class="container">
+            <!-- all grid elements live within -->
+            <!-- status bar -->
+            <div class="status">
+                <h1>EMAR v4 Teleoperator</h1>
+                <hr>
+            </div>
+            <!-- prompts -->
+            <div class="introSection highlightSection">
+                <h2>Intro</h2>
+                <button type="button" id="a1" class="intro" onclick="playAudio('audio_a1')">Hello! My name is EMAR. I am a social robot designed by the University of Washington. I am designed to help people with stress. What is your name?</button>
+                <button id="b1" class="intro" onclick="playAudio('audio_b1')">It’s nice to meet you. I like talking to people. May I ask you a couple of questions about how you're doing?</button>
+            </div>
+            <div class="emaSection">
+                <h2>Momentary</h2>
+                <button id="c1" class="emaQs" onclick="playAudio('audio_c1')">Can you tell me, how stressed do you feel right now?</button>
+                <button id="d1" class="emaQs" onclick="playAudio('audio_d1')">I'd also like to know, what is your mood right now?</button>
+            </div>
+            <div class="stressSection">
+                <h2>Stress Story</h2>
+                <button id="e1" class="stressStory" onclick="playAudio('audio_e1')">Thank you for sharing your stress level and mood with me. I also really like to hear stories. Would you like to share a stress story with me?</button>
+                <button id="f1" class="stressStory" onclick="playAudio('audio_f1')">Great, I am listening.</button>
+                <button id="g1" class="stressStory" onclick="playAudio('audio_g1')">Do you want to tell me more about that?</button>
+                <button id="h1" class="stressStory" onclick="playAudio('audio_h1')">How did that make you feel?</button>
+            </div>
+            <div class="exitSection">
+                <h2>Exit</h2>
+                <button id="j1" class="exit" onclick="playAudio('audio_j1')">Thank you for sharing that story with me.</button>
+                <button id="k1" class="exit" onclick="playAudio('audio_k1')">I really liked hearing about how you are doing.</button>
+                <button id="m1" class="exit" onclick="playAudio('audio_m1')">It was nice meeting you. Bye!</button>
+            </div>
+            <!-- Response break -->
+            <div class="responseBreak">
+                <h2>Responses</h2>
+                <hr>
+            </div>
+            <!-- responses -->
+            <div class="emaResponses">
+                <button id="c3" class="ema_response" onclick="playAudio('audio_c3')">That's great to hear.</button>
+                <button id="c4" class="ema_response" onclick="playAudio('audio_c4')">Thanks for sharing that with me.</button>
+                <button id="c5" class="ema_response" onclick="playAudio('audio_c5')">I'm sorry to hear that, I hope things get better.</button>
+            </div>
+            <div class="storyResponses">
+                <button id="f2" class="story_response" onclick="playAudio('audio_f2')">That sounds difficult.</button>
+                <button id="f3" class="story_response" onclick="playAudio('audio_f3')">That sounds stressful.</button>
+                <button id="f4" class="story_response" onclick="playAudio('audio_f4')">I can understand why you were stressed.</button>
+            </div>
+            <div class="responseBar">
+                <button id="d2" class="response" onclick="playAudio('audio_d2')">I'm sorry, I didn't hear that.</button>
+                <button id="d3" class="response" onclick="playAudio('audio_d3')">Could you repeat that?</button>
+                <button id="b3" class="response" onclick="playAudio('audio_b3')">Come find me later if you feel like talking.</button>
+                <button id="h2" class="response" onclick="playAudio('audio_h2')">Yes.</button>
+                <button id="h3" class="response" onclick="playAudio('audio_h3')">I see.</button>
+                <button id="h4" class="response" onclick="playAudio('audio_h4')">Oh.</button>
+            </div>
+            <footer>
+                <form class="sessionInfo">
+                    <span class="start">
+                        <label for="researcher">Researcher:</label>
+                        <input id="researcherInput" type="text" name="researcher">
+                        <label for="participantID">Participant ID:</label>
+                        <input id="participantIDInput" type="text" name="participantID">
+                    </span>
+                </form>
+                <button id="startSession" class="sessionBtn" onclick="startSessionAction()">Start Session</button>
+                <button id="endSession" class="sessionBtn" onclick="endSessionAction()">End Session</button>
+            </footer>
+        </div> <!-- /container -->
+    </main>
 
 <script type="text/javascript" src="app.js"></script>
 </body>
