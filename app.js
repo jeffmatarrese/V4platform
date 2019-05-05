@@ -11,6 +11,10 @@ var sessionEvents = [];
 var sessionResearcher = "NONE";
 var sessionParticipantID = "NONE";
 
+//Background color
+var bgColor = "#403f56";
+var highlightedSectionColor = "#6c1b6d";
+
 // Starts a session
 var startSessionAction = function () {
 
@@ -55,7 +59,7 @@ var startSessionAction = function () {
 // Intialize a new session
 var initNewSession = function (researcher, participantID) {
     // Change BG color to indicate an active session (light green looks nice)
-    document.body.style.backgroundColor = "lightgreen";
+    document.body.style.backgroundColor = "#479642";
 
     // Set the global variables accordingly
     sessionEvents = [];
@@ -89,9 +93,7 @@ var endSessionAction = function () {
         // TODO: append to sessions.csv
         download("session" + sessionID + ".csv", writeText);
 
-        // Reset backround and show a success messagebox
-        document.body.style.backgroundColor = "white";
-        successNotice("Your session has been ended and your results have been recorded.");
+        window.location.reload(false);
     }
 
     sessionStarted = false;
@@ -109,7 +111,6 @@ var successNotice = function (notice) {
 
 // Function for playing audio files when buttons are clicked
 var playAudio = function (strAudioObj) {
-
     // Make sure a session has been started
     if (!sessionStarted) {
         throwError("You need to start a session in order to teleoperate.");
@@ -133,6 +134,11 @@ var playAudio = function (strAudioObj) {
 
     // Push to sessionEvents for later saving
     sessionEvents.push(strAudioObj);
+
+    //Grey out buttons and highlight section
+    var button = document.getElementById(strAudioObj.slice(-2));
+    button.style.backgroundColor = "#919191";
+    button.parentElement.backgroundColor = highlightedSectionColor;
 }
 
 // Function for downloading a text file
@@ -152,17 +158,14 @@ function download(filename, text) {
 var startSession = document.getElementById('startSession');
 var endSession = document.getElementById('endSession');
 
-// OLD CODE -> deprecated
+// start stop buttons
+startSession.addEventListener("click", record());
+endSession.addEventListener("click", end());
+
+//DEPRECATED CODE - To be removed in a future version
 function record(){
-	console.log("record function happening")
-	// pull data from two fields
-	// start new file
-	// save button clicks to file
+	console.log("Record function started.")
 };
 
 function end(){
-	// save file
 }
-
-
-
