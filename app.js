@@ -164,7 +164,6 @@ endSession.addEventListener("click", end());
 
 //DEPRECATED CODE - To be removed in a future version
 function record(){
-	console.log("Record function started.")
 };
 
 function end(){

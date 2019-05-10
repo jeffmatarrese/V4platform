@@ -105,6 +105,9 @@ h2 {
 footer {
     grid-area: footer;
     background-color: #403f56;
+    display: flex;
+    padding: 40px;
+    align-items: center;
 }
 
 .highlightSection {
@@ -138,6 +141,10 @@ button.ema_response {
 button#endSession {
     background-color: #DA1111;
     /*display: hidden;*/
+}
+
+button.sessionBtn {
+    margin-left: 40px;
 }
 
 button {
